@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "mybucket1" {
     }
 }
 
-resource "aws_s3_bucket" "mybucket1" {
+resource "aws_s3_bucket" "mybucket2" {
     bucket= "checkbucket-shreyas-jun2024-2"
     tags = {
         "Name" = "ec2instance-test"
