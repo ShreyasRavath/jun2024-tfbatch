@@ -11,20 +11,18 @@ locals {
     project-contact = "Shreyas@dxc.com"
 }
 
-resource "aws_instance" "myec2instance" {
-    ami = data.aws_ami.myami.id
-    instance_type = "t2.medium"
+resource "aws_s3_bucket" "mybucket1" {
+    bucket= "checkbucket-shreyas-jun2024-1"
     tags = {
         "Name" = "ec2instance-test"
         "Project" = local.project-contact
     }
 }
 
-resource "aws_instance" "myec2instance2" {
-    ami = data.aws_ami.myami.id
-    instance_type = "t2.medium"
+resource "aws_s3_bucket" "mybucket1" {
+    bucket= "checkbucket-shreyas-jun2024-2"
     tags = {
-        "Name" = "ec2instance-test2"
+        "Name" = "ec2instance-test"
         "Project" = local.project-contact
     }
 }
