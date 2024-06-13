@@ -26,3 +26,11 @@ resource "aws_s3_bucket" "mybucket2" {
         "Project" = local.project-contact
     }
 }
+
+resource "aws_s3_bucket" "mybucket3" {
+    bucket= "checkbucket-shreyas-jun2024-3"
+    tags = {
+        "Name" = "ec2instance-test"
+        "Project" = local.project-contact
+    }
+}
