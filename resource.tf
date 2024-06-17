@@ -10,7 +10,7 @@ data "aws_ami" "myami" {
 locals {
     project-contact = "Shreyas@dxc.com"
 }
-#adding comment to trigger tf plan
+#adding comment 
 resource "aws_s3_bucket" "mybucket1" {
     bucket= "checkbucket-shreyas-jun2024-1"
     acl = "private"
