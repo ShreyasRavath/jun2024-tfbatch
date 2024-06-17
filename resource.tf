@@ -13,6 +13,7 @@ locals {
 #adding comment to trigger tf plan
 resource "aws_s3_bucket" "mybucket1" {
     bucket= "checkbucket-shreyas-jun2024-1"
+    acl = "private"
     tags = {
         "Name" = "ec2instance-test"
         "Project" = local.project-contact
@@ -21,6 +22,7 @@ resource "aws_s3_bucket" "mybucket1" {
 
 resource "aws_s3_bucket" "mybucket2" {
     bucket= "checkbucket-shreyas-jun2024-2"
+    acl = "private"
     tags = {
         "Name" = "ec2instance-test"
         "Project" = local.project-contact
@@ -29,6 +31,7 @@ resource "aws_s3_bucket" "mybucket2" {
 #checking soft mandate
 resource "aws_s3_bucket" "mybucket3" {
     bucket= "checkbucket-shreyas-jun2024-3"
+    acl = "private"
     tags = {
         "Name" = "ec2instance-test"
         "Project" = local.project-contact
