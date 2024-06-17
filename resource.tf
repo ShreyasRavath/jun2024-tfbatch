@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "mybucket2" {
         "Project" = local.project-contact
     }
 }
-
+#checking soft mandate
 resource "aws_s3_bucket" "mybucket3" {
     bucket= "checkbucket-shreyas-jun2024-3"
     tags = {
