@@ -13,8 +13,8 @@ locals {
 
 resource "aws_instance" "myec2instance" {
     ami = data.aws_ami.myami.id
-    #instance_type = "t2.medium"
-    instance_type = "t2.2xlarge"
+    instance_type = "t2.medium"
+    #instance_type = "t2.2xlarge"
     tags = {
         "Name" = "ec2instance-test"
         "Project-Contact" = local.project-contact
