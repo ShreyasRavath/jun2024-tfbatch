@@ -16,6 +16,6 @@ resource "aws_instance" "myec2instance" {
     instance_type = "t2.medium"
     tags = {
         "Name" = "ec2instance-test"
-        "Project" = local.project-contact
+        "Project-Contact" = local.project-contact
     }
 }
