@@ -18,5 +18,6 @@ resource "aws_instance" "myec2instance" {
     tags = {
         "Name" = "ec2instance-test"
         "Project-Contact" = local.project-contact
+"owner" = "DXC"
     }
 }
